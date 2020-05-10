@@ -17,7 +17,10 @@ J'utilise l'image d'un serveur web que j'ai monté pour l'hébergement de site w
 * service FTP pour le client
 * 
 
+#### Renommer le serveur web  
+Par défaut, l'image possède le hostname suivant **vps.web.openpixl**, je le modifie pour l'adapter à la situation au cluster de la machine virtuelle.
 
+    sudo nano /etc/hostname  
 
 
 #### Installation FTP
