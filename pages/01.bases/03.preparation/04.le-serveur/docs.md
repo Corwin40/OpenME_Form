@@ -3,6 +3,7 @@ title: 'I. PREPARATION D''UN SERVEUR WEB  '
 taxonomy:
     category:
         - docs
+menu: 'Le serveur'
 ---
 
 J'utilise l'image d'un serveur web que j'ai monté pour l'hébergement de site web. Ce serveur est installé sur une machine virtuel dans mon propre serveur Synology RS820, il est conbstruit de la sorte :  
