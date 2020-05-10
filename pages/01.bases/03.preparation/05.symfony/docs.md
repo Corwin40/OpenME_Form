@@ -3,6 +3,7 @@ title: 'II. DEPLOIEMENT DU PROJET SYMFONY'
 taxonomy:
     category:
         - docs
+menu: Symfony
 ---
 
 ### II. INSTALLATION DE SYMFONY
