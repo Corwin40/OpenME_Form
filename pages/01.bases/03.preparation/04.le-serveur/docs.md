@@ -1,11 +1,10 @@
 ---
-title: 'le serveur'
+title: 'I. PREPARATION D''UN SERVEUR WEB  '
 taxonomy:
     category:
         - docs
 ---
 
-### I. PREPARATION D'UN SERVEUR WEB  
 J'utilise l'image d'un serveur web que j'ai monté pour l'hébergement de site web. Ce serveur est installé sur une machine virtuel dans mon propre serveur Synology RS820, il est conbstruit de la sorte :  
 * OS : Ubuntu Serveur 20.04
 * pile LAMP (php, MariaDb, Apache2)
