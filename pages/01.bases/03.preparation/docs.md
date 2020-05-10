@@ -10,7 +10,7 @@ menu: Préparation
 OS : Linux - Ubuntu 20.04 avec I3 comme bureau de travail  
 IDE: IntelliJIDEA ultimate - JetBrains  
 
-### PREPARATION D'UN SERVEUR WEB  
+### I. PREPARATION D'UN SERVEUR WEB  
 J'utilise l'image d'un serveur web que j'ai monté pour l'hébergement de site web. Ce serveur est installé sur une machine virtuel dans mon propre serveur Synology RS820, il est conbstruit de la sorte :  
 * OS : Ubuntu Serveur 20.04
 * pile LAMP (php, MariaDb, Apache2)
@@ -63,9 +63,9 @@ Mise à jour des dépots et installation de l'outil
 
     sudo apt update && sudo apt install yarn
 
-### VERSIONNING DU PROJET
+#### VERSIONNING DU PROJET
 
-### INSTALLATION DE SYMFONY
+### II. INSTALLATION DE SYMFONY
 
 Une des partie assez simple du projet, le déploiement de symfony sur le serveur de développement s'opère par le biais de l'outil "Symfony" installé précédement par la commande de déploiement.  
 Premièrement, on se positionne dans le répertoire qui va accueillir le projet OpenME  
