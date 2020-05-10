@@ -21,13 +21,12 @@ J'utilise l'image d'un serveur web que j'ai monté pour l'hébergement de site w
 
 
 #### Installation FTP
-1. Déploiement du service ftp 
+Déploiement du service ftp  
 
     sudo apt install vsftpd  
-    
     sudo service vsftpd enable  //Active le service au démarrage du systeme  
     
-2. Ajout d'un utilisateur
+Ajout d'un utilisateur
 
     sudo adduser "utilisateur"
     
