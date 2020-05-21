@@ -6,11 +6,11 @@ taxonomy:
 menu: 'Le serveur'
 ---
 
-J'utilise l'image d'un serveur web que j'ai monté pour l'hébergement de site web. Ce serveur est installé sur une machine virtuel dans mon propre serveur Synology RS820, il est conbstruit de la sorte :  
-* OS : Ubuntu Serveur 20.04
-* pile LAMP (php, MariaDb, Apache2)
-* service FTP pour le client
-* 
+J'utilise l'image d'un serveur web que j'ai monté pour l'hébergement de site web. Ce serveur est installé sur une machine virtuelle dans mon propre serveur Synology RS820. Le serveur est construit de la sorte :  
+* L'OS : Ubuntu Serveur 20.04
+* Une pile LAMP (php, MariaDb, Apache2)
+* Un service FTP pour le client
+* les outils de développement NodeJs, Composer, Symfony 5
 
 #### Renommer le serveur web  
 Par défaut, l'image possède le hostname suivant **vps.web.openpixl**, je le modifie pour l'adapter à la situation au cluster de la machine virtuelle.
@@ -19,7 +19,7 @@ Par défaut, l'image possède le hostname suivant **vps.web.openpixl**, je le mo
 
 
 #### Installation FTP
-Déploiement du service ftp  
+Déploiement du service ftp avec le logiciel **vsftp**.  
 
     sudo apt install vsftpd  
     sudo service vsftpd enable  //Active le service au démarrage du systeme  
