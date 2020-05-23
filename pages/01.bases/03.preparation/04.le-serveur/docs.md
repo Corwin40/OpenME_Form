@@ -12,6 +12,8 @@ J'utilise l'image d'un serveur web que j'ai monté pour l'hébergement de site w
 * Un service FTP pour le client
 * les outils de développement NodeJs, Composer, Symfony 5
 
+La suite présenter les commandes pour la mise en place d'un serveur web opérationnel et sécurisé.
+
 #### Renommer le serveur web  
 Par défaut, l'image possède le hostname suivant **vps.web.openpixl**, je le modifie pour l'adapter à la situation au cluster de la machine virtuelle.
 
@@ -33,10 +35,13 @@ Ajout d'un utilisateur
 
 	sudo apt install apache2 php libapache2-mod-php mariadb-server php-mysql
     sudo apt install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip  
-Pour l'installation du serveur:  
-* [wiki Ubuntu - installation du serveur LAMP](https://doc.ubuntu-fr.org/lamp)
 
-La première ligne déploie la pile sur le serrveru, la seconde ajouter des composants PHP ppour le fonctionnement de 
+
+
+La première ligne déploie la pile sur le serveur, la seconde ajoute les exiensions PHP pour le fonctionnement laint php à Apache2
+
+Aide documentée pour la personnalisation du serveur:  
+* [wiki Ubuntu - installation du serveur LAMP](https://doc.ubuntu-fr.org/lamp)
 
 Les 3 prochaines installations sur le serveur de développement se feront à partir du terminal.  
 
