@@ -1,5 +1,5 @@
 ---
-title: 'I. PREPARATION D''UN SERVEUR WEB  '
+title: 'I. Préparation du serveur web'
 taxonomy:
     category:
         - docs
