@@ -40,8 +40,10 @@ II. Ajout d'un utilisateur
 La première ligne déploie la pile sur le serveur, la seconde ajoute les exiensions PHP pour le fonctionnement de **PHP** avec **Apache2**
 
 ##### Paramétrage d'Apache2  
-**Activation du répertoire personnel : ** 
+**Activation du répertoire personnel : **  
 
+Le but de cette partie du projet est d'enfermer l'utilisateur créé précédement dans son répertoire personnel. Il ne pourra ainsi accéder aux autres dossier du système.
+    
     sudo mkdir ~/public_html
     
 
