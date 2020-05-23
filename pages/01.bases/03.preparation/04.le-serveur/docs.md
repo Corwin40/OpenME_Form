@@ -11,8 +11,8 @@ Habituellement, je déploie une image de serveur web que j'ai monté pour le dé
 * Une pile LAMP (php, MariaDb, Apache2)
 * Un service FTP pour le client
 * les outils de développement NodeJs, Composer, Symfony 5
-
-La suite présenter les commandes pour la mise en place d'un serveur web opérationnel et sécurisé.
+---
+La suite présente les commandes pour la mise en place d'un serveur web opérationnel et sécurisé.
 
 #### Renommer le serveur web  
 Par défaut, l'image possède le hostname suivant **vps.web.openpixl**, je le modifie pour l'adapter à la situation au cluster de la machine virtuelle.
@@ -26,9 +26,9 @@ I. Déploiement du service ftp avec le logiciel **vsftp**.
     sudo apt install vsftpd  
     sudo service vsftpd enable  //Active le service au démarrage du systeme  
     
-II. Ajout d'un utilisateur
+II. Ajout d'un utilisateur  
 
-    sudo adduser "utilisateur"
+    sudo adduser "utilisateur"  
     
 
 #### Installation de LAMP  
