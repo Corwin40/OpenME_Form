@@ -42,12 +42,17 @@ La première ligne déploie la pile sur le serveur, la seconde ajoute les exiens
 ##### Paramétrage d'Apache2  
 **Activation du répertoire personnel : ** 
 
+    sudo mkdir ~/public_html
+    
+
 **Activer le module de réécriture des liens
 ##### Paramétrage de Mariadb
 
 Une fois installé, sécuriser l'accés à la base en lançant la commande :
 
-    sudo mysql_secure_installation  
+    sudo mysql_secure_installation 
+
+Au lancement de la commande, validez la sécurité par le mot de passe utilisateur, puis à la première question de demande de mot de passe root pour MariaDb, validez directement "Enter". Annotez à 2 reprises le nouveau mot de passe et répondre "Y" à chaque questions. 
 
 Aide documentée pour la personnalisation du serveur:  
 * [wiki Ubuntu - installation du serveur LAMP](https://doc.ubuntu-fr.org/lamp)
