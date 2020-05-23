@@ -21,12 +21,12 @@ Par défaut, l'image possède le hostname suivant **vps.web.openpixl**, je le mo
 
 #### Installation FTP
 J'utilse un serveur FTP pour minimiser l'utilisation du protocole SSH pour la suite du développement :
-- Déploiement du service ftp avec le logiciel **vsftp**.  
+I. Déploiement du service ftp avec le logiciel **vsftp**.  
 
     sudo apt install vsftpd  
     sudo service vsftpd enable  //Active le service au démarrage du systeme  
     
-- Ajout d'un utilisateur
+II. Ajout d'un utilisateur
 
     sudo adduser "utilisateur"
     
