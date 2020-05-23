@@ -10,7 +10,8 @@ Habituellement, je déploie une image de serveur web que j'ai monté pour le dé
 * L'OS : Ubuntu Serveur 20.04
 * Une pile LAMP (php, MariaDb, Apache2)
 * Un service FTP pour le client
-* les outils de développement NodeJs, Composer, Symfony 5
+* les outils de développement NodeJs, Composer, Symfony 5  
+
 ===
 La suite présente les commandes pour la mise en place d'un serveur web opérationnel et sécurisé.
 
