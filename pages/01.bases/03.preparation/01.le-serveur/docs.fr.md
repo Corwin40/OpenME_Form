@@ -76,7 +76,10 @@ Premièrement, si ce n'est pas le cas installer **Git** sur votre serveur par la
 
     sudo apt install git  
     
-Puis configurez Git comme suivant en personnalisant le nom et l'emil de l'utilisateur de Git :  
+Puis configurez **Git** comme suivant en personnalisant le nom et l'email de l'utilisateur de **Git** :  
 
     git config --global user.name "Your_Name"  
     git config --global user.email "Your_Email"  
+    
+>>> Si vous souhaitez vous assurer de la prise en compte de la config, vous pouvez effectuez la commande :  
+>>>     git config --list
