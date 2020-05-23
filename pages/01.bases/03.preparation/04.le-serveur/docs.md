@@ -20,7 +20,7 @@ Par défaut, l'image possède le hostname suivant **vps.web.openpixl**, je le mo
     sudo nano /etc/hostname  
 
 #### Installation FTP
-J'utilse un serveur FTP pour minimiser l'utilisation du protocole SSH pour la suite du développement :
+J'utilse un serveur FTP pour minimiser l'utilisation du protocole SSH pour la suite du développement :  
 I. Déploiement du service ftp avec le logiciel **vsftp**.  
 
     sudo apt install vsftpd  
