@@ -37,9 +37,17 @@ II. Ajout d'un utilisateur
 	sudo apt install apache2 php libapache2-mod-php mariadb-server php-mysql
     sudo apt install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip  
 
+La première ligne déploie la pile sur le serveur, la seconde ajoute les exiensions PHP pour le fonctionnement de **PHP** avec **Apache2**
 
+##### Paramétrage d'Apache2  
+**Activation du répertoire personnel : ** 
 
-La première ligne déploie la pile sur le serveur, la seconde ajoute les exiensions PHP pour le fonctionnement laint php à Apache2
+**Activer le module de réécriture des liens
+##### Paramétrage de Mariadb
+
+Une fois installé, sécuriser l'accés à la base en lançant la commande :
+
+    sudo mysql_secure_installation  
 
 Aide documentée pour la personnalisation du serveur:  
 * [wiki Ubuntu - installation du serveur LAMP](https://doc.ubuntu-fr.org/lamp)
