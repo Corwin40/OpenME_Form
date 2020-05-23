@@ -1,12 +1,12 @@
 ---
-title: 'II. DEPLOIEMENT DU PROJET SYMFONY'
+title: 'III. DEPLOIEMENT DU PROJET SYMFONY'
 taxonomy:
     category:
         - docs
 menu: Symfony
 ---
 
-### II. INSTALLATION DE SYMFONY
+### III. INSTALLATION DE SYMFONY
 
 Une des partie assez simple du projet, le déploiement de symfony sur le serveur de développement s'opère par le biais de l'outil "Symfony" installé précédement par la commande de déploiement.  
 Premièrement, on se positionne dans le répertoire qui va accueillir le projet OpenME  
