@@ -1,5 +1,5 @@
 ---
-title: 'III. DEPLOIEMENT DU PROJET SYMFONY'
+title: 'III. Déploiement du projet symfony'
 taxonomy:
     category:
         - docs
