@@ -63,6 +63,7 @@ Maintenant, créons un utilisateur spécifique pour la gestion des bases de donn
     CREATE USER 'nom_utilisateur_choisi'@'localhost' IDENTIFIED BY 'mot_de_passe_solide';
     GRANT ALL ON *.* TO 'nom_utilisateur'@'localhost';
     FLUSH PRIVILEGES;
+    EXIT;
     
 Remplacez les élements suivants par les vôtres : nom_utilisateur_choisi, mot_de_passe_solide, nom_utilisateur.
 
