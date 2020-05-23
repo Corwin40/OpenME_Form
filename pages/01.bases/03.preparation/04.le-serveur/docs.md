@@ -12,7 +12,7 @@ Habituellement, je déploie une image de serveur web que j'ai monté pour le dé
 * Un service FTP pour le client
 * les outils de développement NodeJs, Composer, Symfony 5  
 
-===
+<hr>
 La suite présente les commandes pour la mise en place d'un serveur web opérationnel et sécurisé.
 
 #### Renommer le serveur web  
