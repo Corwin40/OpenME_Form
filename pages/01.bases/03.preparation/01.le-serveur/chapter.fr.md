@@ -71,3 +71,11 @@ Aide documentée pour la personnalisation du serveur:
 * [wiki Ubuntu - installation du serveur LAMP](https://doc.ubuntu-fr.org/lamp)
 
 #### VERSIONNING DU PROJET
+Premièrement, si ce n'est pas le cas installer **Git** sur votre serveur par la commande suivante  
+
+    sudo apt install git  
+    
+Puis configurez Git comme suivant en personnalisant le nom et l'emil de l'utilisateur de Git :  
+
+    git config --global user.name "Your_Name"  
+    git config --global user.email "Your_Email"  
