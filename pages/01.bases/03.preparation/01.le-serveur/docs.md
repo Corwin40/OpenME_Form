@@ -47,7 +47,8 @@ Le but de cette partie du projet est d'enfermer l'utilisateur créé précédeme
     sudo mkdir ~/public_html
     
 
-**Activer le module de réécriture des liens
+**Activer le module de réécriture des liens**
+
 ##### Paramétrage de Mariadb
 
 Une fois installé, sécuriser l'accés à la base en lançant la commande :
@@ -56,7 +57,7 @@ Une fois installé, sécuriser l'accés à la base en lançant la commande :
 
 Au lancement de la commande, validez la sécurité par le mot de passe utilisateur, puis à la première question de demande de mot de passe root pour MariaDb, validez directement "Enter". Annotez à 2 reprises le nouveau mot de passe et répondre "Y" à chaque questions. 
 
-Maintenant créons un utilisateur spécifique au serveur :  
+Maintenant, créons un utilisateur spécifique pour la gestion des bases de données MariaDb ainsi que la base nécessaire au projet :  
 
 	sudo mysql
     CREATE USER 'nom_utilisateur_choisi'@'localhost' IDENTIFIED BY 'mot_de_passe_solide';
