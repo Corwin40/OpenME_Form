@@ -61,6 +61,11 @@ Maintenant, créons un utilisateur spécifique pour la gestion des bases de donn
 
 	sudo mysql
     CREATE USER 'nom_utilisateur_choisi'@'localhost' IDENTIFIED BY 'mot_de_passe_solide';
+    GRANT ALL ON *.* TO 'nom_utilisateur'@'localhost';
+    CREATE DATABASE nom_de_la_base;
+    FLUSH PRIVILEGES;
+    
+Remplacez les élements suivants par les vôtres : _nom_utilisateur_choisi_, _mot_de_passe_solide_, _nom_utilisateur_, _nom_de_la_base_
 
 Aide documentée pour la personnalisation du serveur:  
 * [wiki Ubuntu - installation du serveur LAMP](https://doc.ubuntu-fr.org/lamp)
