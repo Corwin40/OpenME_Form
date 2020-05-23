@@ -45,7 +45,7 @@ La première ligne déploie la pile sur le serveur, la seconde ajoute les exiens
 Le but de cette partie du projet est d'enfermer l'utilisateur créé précédement dans son répertoire personnel. Il ne pourra ainsi accéder aux autres dossier du système.
     
     sudo mkdir ~/public_html
-    
+    chmod -R 755 ~/public_html  // 755 : droit en lecture et exécution 
 
 **Activer le module de réécriture des liens**
 
