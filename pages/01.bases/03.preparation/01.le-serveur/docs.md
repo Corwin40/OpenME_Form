@@ -54,6 +54,11 @@ Une fois installé, sécuriser l'accés à la base en lançant la commande :
 
 Au lancement de la commande, validez la sécurité par le mot de passe utilisateur, puis à la première question de demande de mot de passe root pour MariaDb, validez directement "Enter". Annotez à 2 reprises le nouveau mot de passe et répondre "Y" à chaque questions. 
 
+Maintenant créons un utilisateur spécifique au serveur :  
+
+	sudo mysql
+    CREATE USER 'nom_utilisateur_choisi'@'localhost' IDENTIFIED BY 'mot_de_passe_solide';
+
 Aide documentée pour la personnalisation du serveur:  
 * [wiki Ubuntu - installation du serveur LAMP](https://doc.ubuntu-fr.org/lamp)
 
