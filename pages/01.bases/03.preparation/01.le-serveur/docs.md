@@ -62,6 +62,4 @@ Maintenant créons un utilisateur spécifique au serveur :
 Aide documentée pour la personnalisation du serveur:  
 * [wiki Ubuntu - installation du serveur LAMP](https://doc.ubuntu-fr.org/lamp)
 
-
-
 #### VERSIONNING DU PROJET
