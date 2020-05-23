@@ -1,8 +1,8 @@
 ---
 title: 'I. Préparation du serveur web'
 taxonomy:
-    category: docs
-    tag: ''
+    category:
+        - docs
 menu: 'Le serveur'
 ---
 
