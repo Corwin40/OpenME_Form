@@ -6,7 +6,7 @@ taxonomy:
 menu: 'Le serveur'
 ---
 
-J'utilise l'image d'un serveur web que j'ai monté pour l'hébergement de site web. Ce serveur est installé sur une machine virtuelle dans mon propre serveur Synology RS820. Le serveur est construit de la sorte :  
+Habituellement, je déploie une image de serveur web que j'ai monté pour le développement de site web. Ce serveur est installé sur une machine virtuelle dans mon propre serveur Synology RS820. Le serveur web est construit de la sorte :  
 * L'OS : Ubuntu Serveur 20.04
 * Une pile LAMP (php, MariaDb, Apache2)
 * Un service FTP pour le client
@@ -19,14 +19,14 @@ Par défaut, l'image possède le hostname suivant **vps.web.openpixl**, je le mo
 
     sudo nano /etc/hostname  
 
-
 #### Installation FTP
-Déploiement du service ftp avec le logiciel **vsftp**.  
+J'utilse un serveur FTP pour minimiser l'utilisation du protocole SSH pour la suite du développement :
+- Déploiement du service ftp avec le logiciel **vsftp**.  
 
     sudo apt install vsftpd  
     sudo service vsftpd enable  //Active le service au démarrage du systeme  
     
-Ajout d'un utilisateur
+- Ajout d'un utilisateur
 
     sudo adduser "utilisateur"
     
