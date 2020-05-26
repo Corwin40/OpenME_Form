@@ -43,17 +43,20 @@ Grace à l'outil _Composer_, j'installe
         
 	// ...
     ;
+    
 Créer un fichier custom.scss dans le dossier ./assets/css/ qu'on appellera dans le fichier app.js par un import :
     
+    // ...
     @import "./custom.scss";
+    // ...
 
 #### Ajout de bootstrap et ses dépendences
 
-installation de bootstrap
+installation de bootstrap en ligne de commande
 
     yarn add bootstrap --dev
 
-Dépendances js à bootstrap
+Dépendances js à bootstrap en ligne de commande
 
     yarn add jquery popper.js --dev
 
