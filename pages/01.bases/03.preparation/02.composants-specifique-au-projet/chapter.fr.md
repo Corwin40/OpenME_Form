@@ -3,11 +3,9 @@ title: 'II. Composants spécifique au projet'
 menu: 'Composants supplémentaires'
 ---
 
-Les 3 prochaines installations sur le serveur de développement se feront à partir du terminal.  
-
+Les 4 prochaines installations sur le serveur de développement se feront à partir du terminal.  
 
 #### installation de composer
-
 
 	php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" 
 	php -r "if (hash_file('sha384', 'composer-setup.php') === 'e0012edf3e80b6978849f5eff0d4b4e4c79ff1609dd1e613307e16318854d24ae64f26d17af3ef0bf7cfb710ca74755a') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
@@ -36,4 +34,5 @@ Syfony a développe un installateur pour permettre aux développeurs de déploye
 
     wget https://get.symfony.com/cli/installer -O - | bash
     sudo mv /home/utilisateur/.symfony/bin/symfony /usr/local/bin/symfony
-    
+
+Voila. A partir de ce moment vous possédez une machine en état pour porter vos projets de développemement symfony ou autres. Vous pouvez passez à la suite du projet.
