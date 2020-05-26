@@ -68,12 +68,14 @@ Inclusion des appels js et css dans le tempalte de base symfony
             <meta charset="UTF-8">
             <title>{% block title %}Welcome!{% endblock %}</title>
             {% block stylesheets %}
-            	+ 
+            	{{ encore_entry_link_tags('app') }}
             {% endblock %}
         </head>
         <body>
             {% block body %}{% endblock %}
-            {% block javascripts %}{% endblock %}
+            {% block javascripts %}
+            	{{ encore_entry_link_tags('app') }}
+            {% endblock %}
         </body>
     </html>
 
