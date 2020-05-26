@@ -110,9 +110,15 @@ Une fois modifié, je lance les commandes suivantes :
     
 #### LexikJWTAuthenticationBundle
     
-Dernière étape avant de passer à la partie II du du projet. J'anticipe la partie de sécurisationn de la palteforme avec l'installation d'un bundle de h=gestion de token dans les header de
+Dernière étape avant de passer à la partie II du du projet. J'anticipe la partie de sécurisationn de la palteforme avec l'installation d'un bundle de gestion de token dans les "header" d'appels.
 
-    composer req "lexik/jwt-authentication-bundle"
+	composer req "lexik/jwt-authentication-bundle"
+
+Création des clesf avec openSSL
+
+    $ mkdir -p config/jwt
+	$ openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096
+	$ openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout
     
 Toute la doc sur github : [LexikJWTauthentificationBundle](https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#installation)
 
