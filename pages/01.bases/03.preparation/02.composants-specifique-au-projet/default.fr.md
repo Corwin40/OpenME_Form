@@ -30,3 +30,10 @@ Je déplace le fichier composer.phar situé dans le dossier home
 Mise à jour des dépots et installation de l'outil
 
     sudo apt update && sudo apt install yarn
+
+#### installation du symfony CLI
+Syfony a développe un installateur pour permettre aux développeurs de déployer rapidement l'outil sur leur machine, de lancer le serveur de test, ... Pour cela lancer les 2 commandes suivantes et surtout remplacer Utilisateur par vos propres informations.
+
+    wget https://get.symfony.com/cli/installer -O - | bash
+    sudo mv /home/utilisateur/.symfony/bin/symfony /usr/local/bin/symfony
+    
