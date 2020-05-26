@@ -40,12 +40,8 @@ Grace à l'outil _Composer_, j'installe
 
         // processes files ending in .scss or .sass
         .enableSassLoader()
-
-        // processes files ending in .less
-        .enableLessLoader()
-
-        // processes files ending in .styl
-        .enableStylusLoader()
+        
+	// ...
     ;
 
 #### Ajout de bootstrap et ses dépendences
