@@ -27,6 +27,35 @@ Grace à l'outil _Composer_, j'installe
 
 	composer req encore
     composer req laminas/laminas-code laminas/laminas-eventmanager
+    
+#### Activation de la prise en charges Scss
+
+    // webpack.config.js
+    // ...
+
+    Encore
+    // ...
+
+    // enable just the one you want
+
+        // processes files ending in .scss or .sass
+        .enableSassLoader()
+
+        // processes files ending in .less
+        .enableLessLoader()
+
+        // processes files ending in .styl
+        .enableStylusLoader()
+    ;
+
+#### Ajout de bootstrap et ses dépendences
+
+    yarn add bootstrap --dev
+
+Dépendances js à bootstrap
+
+    yarn add jquery popper.js --dev
+
 
 #### Préparation de symfony pour fonctionnner avec React  
 Dans la Partie Encore, Je décommente la partie dédiée à React en saupprimant les 2 "slash" a la ligne _//.enableReactPreset()_  
