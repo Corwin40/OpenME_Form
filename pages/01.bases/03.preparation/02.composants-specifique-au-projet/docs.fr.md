@@ -1,7 +1,8 @@
 ---
 title: 'II. Composants spécifique au projet'
 taxonomy:
-    category: docs
+    category:
+        - docs
 menu: 'Composants supplémentaires'
 ---
 
