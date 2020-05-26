@@ -108,10 +108,12 @@ Une fois modifié, je lance les commandes suivantes :
     yarn add @babel/preset-react --dev  
     yarn add react react-dom prop-types  
     
-### JWT : LexikJWTAuthenticationBundle
+#### LexikJWTAuthenticationBundle
     
 Dernière étape avant de passer à la partie II du du projet. J'anticipe la partie de sécurisationn de la palteforme avec l'installation d'un bundle de h=gestion de token dans les header de
 
     composer req "lexik/jwt-authentication-bundle"
     
 Toute la doc sur github : [LexikJWTauthentificationBundle](https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#installation)
+
+Une fois installé, passons à la suite.
