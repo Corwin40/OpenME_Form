@@ -60,6 +60,23 @@ Dépendances js à bootstrap en ligne de commande
 
     yarn add jquery popper.js --dev
 
+Inclusion des appels js et css dans le tempalte de base symfony
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>{% block title %}Welcome!{% endblock %}</title>
+            {% block stylesheets %}
+            	+ 
+            {% endblock %}
+        </head>
+        <body>
+            {% block body %}{% endblock %}
+            {% block javascripts %}{% endblock %}
+        </body>
+    </html>
+
 
 #### Préparation de symfony pour fonctionnner avec React  
 Dans la Partie Encore, Je décommente la partie dédiée à React en saupprimant les 2 "slash" a la ligne _//.enableReactPreset()_  
@@ -89,10 +106,3 @@ Une fois modifié, je lance les commandes suivantes :
     yarn add @babel/preset-react --dev  
     yarn add react react-dom prop-types  
     
-- **création d'un premier controller : **
-    - `php bin/console make:controller` qu'on peut appeler _IndexController_
-    - modifier la route dans l'annotation du fichier IndexController : `@Route("/", name="index")`
-    - mettre au propre le template en supprimant tout le contenu compris dans le block twig body, inclure les codes d'appel _Encore_ dans le fichier de base : 
-        - pour le css :  `{{ encore\_entry\_link_tags('app') }}`
-        - pour le js : `{{ encore\_entry\_script_tags('app') }}`
-    - ajouter une div portant comme id root
