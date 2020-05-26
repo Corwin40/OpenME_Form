@@ -37,4 +37,4 @@ Syfony a développe un installateur pour permettre aux développeurs de déploye
     wget https://get.symfony.com/cli/installer -O - | bash
     sudo mv /home/utilisateur/.symfony/bin/symfony /usr/local/bin/symfony
 
-Voila. A partir de ce moment vous possédez une machine en état pour porter vos projets de développemement symfony ou autres. Vous pouvez passez à la suite du projet.
+Voila. A partir de ce moment vous possédez une machine en état pour porter vos projets de développemement symfony ou autres.
