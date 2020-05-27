@@ -21,12 +21,19 @@ Elle crééra un répertoire _"openme"_ contenant grace à l'option  _--full_  t
    
 ### COMPOSANT SYMFONY SUPPLEMENTAIRE
 
-#### Installation de l'outil _"webpack encore"_ et de dépendances externes  
-Encore
-Grace à l'outil _Composer_, j'installe 
+#### webpack encore
+
+En terminal, on installe l'outil Webpack Encore
 
 	composer req encore
     composer req laminas/laminas-code laminas/laminas-eventmanager
+    
+Commandes
+
+	yarn encore dev  //compilation des css
+    yarn encore dev --watch
+    yarn encore dev-server  //compilation à la vollée et actualisation du navigateur pour les résultats
+    
     
 #### Activation de la prise en charges Scss
 
