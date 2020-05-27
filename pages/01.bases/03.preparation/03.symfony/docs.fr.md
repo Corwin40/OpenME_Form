@@ -50,6 +50,10 @@ Créer un fichier custom.scss dans le dossier ./assets/css/ qu'on appellera dans
     @import "./custom.scss";
     // ...
 
+Ajouter les dépenpendences 
+
+	yarn add sass-loader@^8.0.0 node-sass --dev
+
 #### Ajout de bootstrap et ses dépendences
 
 installation de bootstrap en ligne de commande
@@ -114,7 +118,7 @@ Dernière étape avant de passer à la partie II du du projet. J'anticipe la par
 
 	composer req "lexik/jwt-authentication-bundle"
 
-Création des clesf avec openSSL
+Création des clefs avec openSSL
 
     $ mkdir -p config/jwt
 	$ openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096
