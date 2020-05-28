@@ -50,16 +50,17 @@ Commandes
         
 	// ...
     ;
-    
-Créer un fichier custom.scss dans le dossier ./assets/css/ qu'on appellera dans le fichier app.js par un import :
-    
-    // ...
-    @import "./custom.scss";
-    // ...
 
-Ajouter les dépenpendences 
+Ajouter les dépenpendences en ligne de commande
 
+	yarn install
 	yarn add sass-loader@^8.0.0 node-sass --dev
+
+Modifiez l'extension du fichier app.css en .scss dans le dossier ./assets/css/ et qu'on appellera dans le fichier app.js par un import :
+    
+    // ...
+    @import "./app.scss";
+    // ...
 
 #### Ajout de bootstrap et ses dépendences
 
