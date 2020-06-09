@@ -27,7 +27,9 @@ En terminal, on installe l'outil Webpack Encore
 
 	composer req encore
     composer req laminas/laminas-code laminas/laminas-eventmanager
-    
+
+J'applique une moidification du template de base : /templates/base.html.twig pour y incorporer les appels **JS** et **CSS** du **Webpack Encore**
+
 Commandes
 
 	yarn encore dev  //compilation des css
@@ -86,7 +88,7 @@ Inclusion des appels js et css dans le tempalte de base symfony
         <body>
             {% block body %}{% endblock %}
             {% block javascripts %}
-            	{{ encore_entry_link_tags('app') }}
+            	{{ encore_entry_script_tags('app') }}
             {% endblock %}
         </body>
     </html>
