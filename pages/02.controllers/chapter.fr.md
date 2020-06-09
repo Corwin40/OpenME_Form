@@ -1,7 +1,8 @@
 ---
 title: Controllers
 taxonomy:
-    category: docs
+    category:
+        - docs
 ---
 
 ### Chapitre 2
