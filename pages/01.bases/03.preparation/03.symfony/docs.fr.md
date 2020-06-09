@@ -23,12 +23,29 @@ Elle crééra un répertoire _"openme"_ contenant grace à l'option  _--full_  t
 
 #### webpack encore
 
-En terminal, on installe l'outil Webpack Encore
+1. Depuis le terminal, on installe l'outil Webpack Encore par la commande
 
 	composer req encore
-    composer req laminas/laminas-code laminas/laminas-eventmanager
+    composer req laminas/laminas-code laminas/laminas-eventmanager  //non nécessaire depuis symfony 5.1
 
-J'applique une moidification du template de base : /templates/base.html.twig pour y incorporer les appels **JS** et **CSS** du **Webpack Encore**
+2. Depuis l'IDE, dans le fichier "/templates/base.html.twig", j'incorpore les appels **JS** et **CSS** :
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>{% block title %}Welcome!{% endblock %}</title>
+            {% block stylesheets %}
+            	{{ encore_entry_link_tags('app') }}
+            {% endblock %}
+        </head>
+        <body>
+            {% block body %}{% endblock %}
+            {% block javascripts %}
+            	{{ encore_entry_script_tags('app') }}
+            {% endblock %}
+        </body>
+    </html>
 
 Commandes
 
@@ -73,26 +90,6 @@ installation de bootstrap en ligne de commande
 Dépendances js à bootstrap en ligne de commande
 
     yarn add jquery popper.js --dev
-
-Inclusion des appels js et css dans le tempalte de base symfony
-
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>{% block title %}Welcome!{% endblock %}</title>
-            {% block stylesheets %}
-            	{{ encore_entry_link_tags('app') }}
-            {% endblock %}
-        </head>
-        <body>
-            {% block body %}{% endblock %}
-            {% block javascripts %}
-            	{{ encore_entry_script_tags('app') }}
-            {% endblock %}
-        </body>
-    </html>
-
 
 #### Préparation de symfony pour fonctionnner avec React  
 Dans la Partie Encore, Je décommente la partie dédiée à React en saupprimant les 2 "slash" a la ligne _//.enableReactPreset()_  
