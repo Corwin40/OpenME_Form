@@ -19,16 +19,23 @@ Ensuite, nous lançons la commande de déploiement.
 
 Elle crééra un répertoire _"openme"_ contenant grace à l'option  _--full_  tous les éléments essentiel à symfony : doctrine, security, ... [voir le site de Symfony pour plus de détails](https://symfony.com/doc/current/setup.html).
    
-### COMPOSANT SYMFONY SUPPLEMENTAIRE
+### WEBPACK ENCORE
 
-#### webpack encore
-
-Depuis le terminal, on installe l'outil Webpack Encore par la commande
+#### Installation 
+**Webpack Encore** est le bundle permettant d'utiliser l'outil WebPack au sein de votre projet Symfony. Il vous fournira ainsi tout ce qu'il vous faut pour compiler vos fichier de style (CSS, SSS, SASS, ...), simuler un serveur en développement, connecter votre projet à React, Vue, ...     
+Pour l'installer, depuis le terminal tapez la commande suivante
 
     composer req encore  
-    composer req laminas/laminas-code laminas/laminas-eventmanager  
 
-Depuis l'IDE, dans le fichier "/templates/base.html.twig", j'incorpore les appels **JS** et **CSS** :
+La commande créera dans votre projet : 
+ * un dossier **assets**, dans lequel on placera nos fichier JS et CSS
+ * un dossier public qui contiendra les fichiers compilés
+ * un fichier de configuration **webpack.config.js** 
+ * ...
+
+
+
+Pour que les appels vers le dossier public se fasse, j'édite dans le fichier "/templates/base.html.twig" les appels **JS** et **CSS** :
 
     <!DOCTYPE html>
 	<html>
@@ -36,12 +43,14 @@ Depuis l'IDE, dans le fichier "/templates/base.html.twig", j'incorpore les appel
             <meta charset="UTF-8">
             <title>{% block title %}Welcome!{% endblock %}</title>
             {% block stylesheets %}
+            	// Appels CSS ou SCSS ...
             	{{ encore_entry_link_tags('app') }}
             {% endblock %}
         </head>
         <body>
             {% block body %}{% endblock %}
             {% block javascripts %}
+            	// Appels JS
             	{{ encore_entry_script_tags('app') }}
             {% endblock %}
         </body>
@@ -54,7 +63,8 @@ Commandes
     yarn encore dev-server  //compilation à la vollée et actualisation du navigateur pour les résultats
     
     
-#### Activation de la prise en charges Scss
+#### Activation de la prise en charges Scss  
+Editez le fichiers webpack.config.js et décommentez la partie dédiée à la compilation Sass en supprimant les 2 "slash" a la ligne _//.enableSassLoader()_   
 
     // webpack.config.js
     // ...
@@ -86,19 +96,18 @@ Modifiez l'extension du fichier app.css en .scss dans le dossier ./assets/css/ e
 installation de bootstrap en ligne de commande
 
     yarn add bootstrap --dev
-
-Dépendances js à bootstrap en ligne de commande
-
     yarn add jquery popper.js --dev
     
 Modifier le(s) fichier .scss
 
-    {{ ...  }}
+    ...
+    
     @import "~bootstrap/scss/bootstrap";
-    {{ ... }}
+    
+    ...
 
-#### Préparation de symfony pour fonctionnner avec React  
-Dans la Partie Encore, Je décommente la partie dédiée à React en saupprimant les 2 "slash" a la ligne _//.enableReactPreset()_  
+#### Activation de React  
+Toujours dans le fichier webpack.config.js, décommentez la partie dédiée à React en supprimant les 2 "slash" a la ligne _//.enableReactPreset()_  
 
     var Encore = require('@symfony/webpack-encore');
 
