@@ -25,8 +25,8 @@ Elle crééra un répertoire _"openme"_ contenant grace à l'option  _--full_  t
 
 1. Depuis le terminal, on installe l'outil Webpack Encore par la commande
 
-	composer req encore
-    composer req laminas/laminas-code laminas/laminas-eventmanager
+    composer req encore  
+    composer req laminas/laminas-code laminas/laminas-eventmanager  
 
 2. Depuis l'IDE, dans le fichier "/templates/base.html.twig", j'incorpore les appels **JS** et **CSS** :
 
