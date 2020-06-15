@@ -90,6 +90,12 @@ installation de bootstrap en ligne de commande
 Dépendances js à bootstrap en ligne de commande
 
     yarn add jquery popper.js --dev
+    
+Modifier le(s) fichier .scss
+
+    {{ ...  }}
+    @import "~bootstrap/scss/bootstrap";
+    {{ ... }}
 
 #### Préparation de symfony pour fonctionnner avec React  
 Dans la Partie Encore, Je décommente la partie dédiée à React en saupprimant les 2 "slash" a la ligne _//.enableReactPreset()_  
