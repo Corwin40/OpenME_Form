@@ -106,7 +106,8 @@ Ensuite, il faut integrer a vos fichier _scss_ et _js_ le code suivant :
     @import "~bootstrap/scss/bootstrap";
     
     ...  
-
+  
+  
     assets > js > app.js  
     ...
     const $ = require('jquery')  
