@@ -93,18 +93,26 @@ Modifiez l'extension du fichier app.css en .scss dans le dossier ./assets/css/ e
 
 #### Ajout de bootstrap et ses dépendences
 
-installation de bootstrap en ligne de commande
+L'integration de bootstrap et ses dépendences se fait avec la commande Yarn deouis le terminal.  
 
     yarn add bootstrap --dev
     yarn add jquery popper.js --dev
     
-Modifier le(s) fichier .scss
+Ensuite, il faut integrer a vos fichier _scss_ et _js_ le code suivant : 
 
+    assets > scss > app.scss
     ...
     
     @import "~bootstrap/scss/bootstrap";
     
+    ...  
+
+    assets > js > app.js  
     ...
+    const $ = require('jquery')  
+    require('bootstrap')  
+    
+
 
 #### Activation de React  
 Toujours dans le fichier webpack.config.js, décommentez la partie dédiée à React en supprimant les 2 "slash" a la ligne _//.enableReactPreset()_  
