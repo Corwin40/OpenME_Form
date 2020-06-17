@@ -6,7 +6,7 @@ taxonomy:
 menu: Symfony
 ---
 
-### III. INSTALLATION DE SYMFONY
+### DEPLOIEMENT DU PROJET SYMFONY
 
 Une des partie assez simple du projet, le déploiement de symfony sur le serveur de développement s'opère par le biais de l'outil "Symfony" installé précédement par la commande de déploiement.  
 Premièrement, on se positionne dans le répertoire qui va accueillir le projet OpenME  
@@ -15,9 +15,9 @@ Premièrement, on se positionne dans le répertoire qui va accueillir le projet 
     
 Ensuite, nous lançons la commande de déploiement. 
 
-	symfony new openme --full  
+	symfony new "votre_projet" --full  
 
-Elle crééra un répertoire _"openme"_ contenant grace à l'option  _--full_  tous les éléments essentiel à symfony : doctrine, security, ... [voir le site de Symfony pour plus de détails](https://symfony.com/doc/current/setup.html).
+La commande crééra un répertoire _"openme"_. Grace à l'option  _--full_  tous les éléments essentiel à symfony seront installé: doctrine, security, ... [voir le site de Symfony pour plus de détails](https://symfony.com/doc/current/setup.html).
    
 ### WEBPACK ENCORE
 
